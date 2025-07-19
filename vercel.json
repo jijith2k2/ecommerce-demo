@@ -1,12 +1,10 @@
 {
-  "functions": {
-    "simple_demo.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "simple_admin.php": {
-      "runtime": "vercel-php@0.6.0"
+  "builds": [
+    {
+      "src": "*.php",
+      "use": "@vercel/php"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/",
@@ -17,12 +15,8 @@
       "dest": "/simple_admin.php"
     },
     {
-      "src": "/simple_demo.php",
+      "src": "/demo",
       "dest": "/simple_demo.php"
-    },
-    {
-      "src": "/simple_admin.php",
-      "dest": "/simple_admin.php"
     }
   ]
 } 
