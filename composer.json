@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce-demo",
+  "description": "Complete E-Commerce Demo with PHP",
+  "type": "project",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo 'E-Commerce Demo installed successfully!'"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+} 

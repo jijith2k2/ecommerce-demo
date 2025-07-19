@@ -1,0 +1,28 @@
+{
+  "functions": {
+    "simple_demo.php": {
+      "runtime": "vercel-php@0.6.0"
+    },
+    "simple_admin.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/simple_demo.php"
+    },
+    {
+      "src": "/admin",
+      "dest": "/simple_admin.php"
+    },
+    {
+      "src": "/simple_demo.php",
+      "dest": "/simple_demo.php"
+    },
+    {
+      "src": "/simple_admin.php",
+      "dest": "/simple_admin.php"
+    }
+  ]
+} 
