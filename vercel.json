@@ -1,31 +1,12 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "simple_demo.php",
-      "use": "@vercel/php@0.6.0"
-    },
-    {
-      "src": "simple_admin.php",
-      "use": "@vercel/php@0.6.0"
-    },
-    {
-      "src": "index.php",
-      "use": "@vercel/php@0.6.0"
-    }
-  ],
   "routes": [
     {
       "src": "/",
-      "dest": "/simple_demo.php"
+      "dest": "/index.html"
     },
     {
       "src": "/admin",
-      "dest": "/simple_admin.php"
-    },
-    {
-      "src": "/demo",
-      "dest": "/simple_demo.php"
+      "dest": "/admin.html"
     }
   ]
 } 
