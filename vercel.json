@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "functions": {
-    "simple_demo.php": {
-      "runtime": "vercel-php@0.6.0"
+  "builds": [
+    {
+      "src": "simple_demo.php",
+      "use": "@vercel/php@0.6.0"
     },
-    "simple_admin.php": {
-      "runtime": "vercel-php@0.6.0"
+    {
+      "src": "simple_admin.php",
+      "use": "@vercel/php@0.6.0"
     },
-    "index.php": {
-      "runtime": "vercel-php@0.6.0"
+    {
+      "src": "index.php",
+      "use": "@vercel/php@0.6.0"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/",
